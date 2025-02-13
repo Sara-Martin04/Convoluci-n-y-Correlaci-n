@@ -6,7 +6,7 @@ Este proyecto se dividió en tres partes:
 
 ### Parte a (Señal resultante de la convolución) 
 
-[1] Convolución =  Esta es un operación matemática entre dos señales, es decir dos funciones que su resultado es una tercera función,para que se entienda mejor piensa que tu estas en la playa y caminas en la arena viendo como tus huellas dejan rastro en ella,pero alguien más pisar tus huellas con un pie volteado, la convolución es ver como estas dos huellas se combinan cuando una está normal y la otra en el sentido contrario. Se utiliza en procesamiento de señales,filtrado y análisis de sistemas.
+[1] Convolución:  Esta es un operación matemática entre dos señales, es decir dos funciones que su resultado es una tercera función,para que se entienda mejor piensa que tu estas en la playa y caminas en la arena viendo como tus huellas dejan rastro en ella,pero alguien más pisar tus huellas con un pie volteado, la convolución es ver como estas dos huellas se combinan cuando una está normal y la otra en el sentido contrario. Se utiliza en procesamiento de señales,filtrado y análisis de sistemas.
 
 ![Imagen de WhatsApp 2025-02-12 a las 21 47 05_f056a580](https://github.com/user-attachments/assets/1b176788-d6c1-4e43-8a28-4967150ce6cc)
 
@@ -47,7 +47,7 @@ También se obtuvieron gráficas  con los dos tipos de cálculos manuales y de l
 
 *graficas python*
 
-Para realizar los calculos y graficas en python realizamos el siguiente codigo:
+Para realizar los cálculos y gráficas en python realizamos el siguiente código:
 ```
         #calcular la convolucion
         conv_result = np.convolve(x_n, y_n)
@@ -78,7 +78,7 @@ plot_convolutions(signals)
 ### Parte B (Correlación entre dos señales)   
 
 
-[1] Correlación : Acá se puede evidenciar que tan parecidas son las señales,mide la similitud entre dos señales, imaginemos que queremos encontrar la relación entre dos canciones, lo que hacemos es tomar un fragmento de cada canción colocándolos uno encima del otro comparando cada pedazo y mirando que tan similares son; existen dos tipos de correlación 
+[1] Correlación: Acá se puede evidenciar que tan parecidas son las señales,mide la similitud entre dos señales, imaginemos que queremos encontrar la relación entre dos canciones, lo que hacemos es tomar un fragmento de cada canción colocándolos uno encima del otro comparando cada pedazo y mirando que tan similares son; existen dos tipos de correlación 
 
 - Correlación cruzada :Comparar dos señales diferentes para encontrar similitudes en distintas posiciones en el tiempo.
   
@@ -91,7 +91,7 @@ plot_convolutions(signals)
 
 Para realizar esta parte de la practica implementamos el siguiente codigo:
 
-1. se define la señal y se calcula la correlacion
+1. se define la señal y se calcula la correlación
 ```
 # Definir señales
 x1 = np.cos(2 * np.pi * 100 * n * Ts)
@@ -122,7 +122,7 @@ Obtuvimos lo siguiente:
 *senal original*
 
 
-4. Se grafica la correlacion cruzada
+4. Se grafica la correlación cruzada
 ```
 # Graficar la correlación cruzada
 plt.subplot(2,1,2)
@@ -139,14 +139,14 @@ Obtuvimos lo siguiente:
 *señal correlacion cruzada*
 
 ### Parte C (Señal EEG) 
-Para esta última parte de la práctica se utilizó datos de la extensión .edf del estudio Señales EEG de una presentación visual serial rápida (RSVP) a diferentes velocidades de 5, 6 y 10 Hz, los datos que elegimos fueron los del paciente 13 a los 10 Hz, para poder importar la señal descargamos la libreria pyedflib
+Para esta última parte de la práctica se utilizó datos de la extensión .edf del estudio Señales EEG de una presentación visual serial rápida (RSVP) a diferentes velocidades de 5, 6 y 10 Hz, los datos que elegimos fueron los del paciente 13 a los 10 Hz, para poder importar la señal descargamos la libreria pyedflib y logramos obtener la siguiente gráfica de la señal EEG. 
 
 ![Imagen de WhatsApp 2025-02-12 a las 22 35 25_0ed77e16](https://github.com/user-attachments/assets/d02cda24-1446-49a8-9ba7-ec9b5aef9858)
 *señal EEG*
 
 - Primero clasificamos la señal:
 ```
-clasificacion = "Señal fisiológica" if "EEG" in nombre_canal else "Otra señal biomédica"
+clasificación = "Señal fisiológica" if "EEG" in nombre_canal else "Otra señal biomédica"
 ```
 - Calculamos la transformada de fourier implementando el siguiente codigo:
 ```
@@ -182,11 +182,16 @@ bins_count = 60
 hist_f, bins_f = np.histogram(np.abs(freqs), bins=bins_count, density=True)
 bin_centers_f = (bins_f[:-1] + bins_f[1:]) / 2
 ````
-Obtubimos lo siguiente:
+Obtuvimos lo siguiente:
 
 ![Imagen de WhatsApp 2025-02-12 a las 22 36 06_99178709](https://github.com/user-attachments/assets/62f8c69c-fdb6-4371-90d3-b14b095df076)
 *histograma*
 
+## Recomendaciones
+-Python 3.9, wfdb, matplotlib
+
+## Informacion de contacto
+-est.paula.vcardenas@unimilitar.edu.co, est.sara.martin@unimilitar.edu.co, est.cristian.cmolina@unimilitar.edu.co
 
 ### Referencias
 [1]. HERNÁNDEZ, A., MORA, N. J. E., & VEGA, H. R. (2020). Enseñanza en el análisis de señales aleatorias usando correlación y sus aplicaciones. Utopía y Praxis Latinoamericana, 25(3), 190-200.
