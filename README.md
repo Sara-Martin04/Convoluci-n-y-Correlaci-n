@@ -141,6 +141,52 @@ Obtuvimos lo siguiente:
 ### Parte C (Señal EEG) 
 Para esta última parte de la práctica se utilizó datos de la extensión .edf del estudio Señales EEG de una presentación visual serial rápida (RSVP) a diferentes velocidades de 5, 6 y 10 Hz, los datos que elegimos fueron los del paciente 13 a los 10 Hz, para poder importar la señal descargamos la libreria pyedflib
 
+![Imagen de WhatsApp 2025-02-12 a las 22 35 25_0ed77e16](https://github.com/user-attachments/assets/d02cda24-1446-49a8-9ba7-ec9b5aef9858)
+*señal EEG*
+
+- Primero clasificamos la señal:
+```
+clasificacion = "Señal fisiológica" if "EEG" in nombre_canal else "Otra señal biomédica"
+```
+- Calculamos la transformada de fourier implementando el siguiente codigo:
+```
+# Transformada de Fourier
+y_f = fft(senal)
+freqs = fftfreq(len(senal), 1/fs)
+```
+Obtuvimos los siguiente:
+
+![Imagen de WhatsApp 2025-02-12 a las 22 35 44_ada013e7](https://github.com/user-attachments/assets/beaa840e-88ee-4b0a-9ea2-fdde59ae0e6d)
+*transformada de fourier de la señal*
+
+- Calculamos los estadisticos:
+```
+# Estadísticos en función de la frecuencia
+frecuencia_media = np.mean(np.abs(freqs))
+frecuencia_mediana = np.median(np.abs(freqs))
+desviacion_frecuencia = np.std(np.abs(freqs))
+
+total = np.sum(senal)
+media_manual = np.mean(senal)
+desv_manual = np.std(senal)
+coef_var_manual = desv_manual / media_manual
+````
+Obtubimos los siguiente:
+
+![Imagen de WhatsApp 2025-02-12 a las 22 37 04_0b9bbe87](https://github.com/user-attachments/assets/9bfc3888-5c35-4b19-bdd1-803eea6c476d)
+
+- Obtuvimos el histograma:
+````
+# Histograma 
+bins_count = 60 
+hist_f, bins_f = np.histogram(np.abs(freqs), bins=bins_count, density=True)
+bin_centers_f = (bins_f[:-1] + bins_f[1:]) / 2
+````
+Obtubimos lo siguiente:
+
+![Imagen de WhatsApp 2025-02-12 a las 22 36 06_99178709](https://github.com/user-attachments/assets/62f8c69c-fdb6-4371-90d3-b14b095df076)
+*histograma*
+
 
 ### Referencias
 [1]. HERNÁNDEZ, A., MORA, N. J. E., & VEGA, H. R. (2020). Enseñanza en el análisis de señales aleatorias usando correlación y sus aplicaciones. Utopía y Praxis Latinoamericana, 25(3), 190-200.
