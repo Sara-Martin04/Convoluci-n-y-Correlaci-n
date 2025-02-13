@@ -135,7 +135,8 @@ Obtuvimos lo siguiente:
 *señal original y señal correlacion cruzada*
 
 ### Parte C (Señal EEG) 
-Para esta última parte de la práctica se utilizó datos de la extensión .edf del estudio Señales EEG de una presentación visual serial rápida (RSVP) a diferentes velocidades de 5, 6 y 10 Hz, los datos que elegimos fueron los del paciente 13 a los 10 Hz
+Para esta última parte de la práctica se utilizó datos de la extensión .edf del estudio Señales EEG de una presentación visual serial rápida (RSVP) a diferentes velocidades de 5, 6 y 10 Hz, los datos que elegimos fueron los del paciente 13 a los 10 Hz, para poder importar la señal descargamos la libreria pyedflib
+
 
 ### Referencias
 [1]. HERNÁNDEZ, A., MORA, N. J. E., & VEGA, H. R. (2020). Enseñanza en el análisis de señales aleatorias usando correlación y sus aplicaciones. Utopía y Praxis Latinoamericana, 25(3), 190-200.
