@@ -47,6 +47,33 @@ También se obtuvieron gráficas  con los dos tipos de cálculos manuales y de l
 
 *graficas python*
 
+Para realizar los calculos y graficas en python realizamos el siguiente codigo:
+```
+        #calcular la convolucion
+        conv_result = np.convolve(x_n, y_n)
+        
+        # Eje de tiempo para la señal r
+        n_conv = np.arange(len(conv_result))
+        
+        # Graficar la convolución
+        ax.stem(n_conv, conv_result, linefmt='b-', markerfmt='bo', basefmt='r-')
+        ax.plot(n_conv, conv_result, 'b-', alpha=0.5)  # Línea continua para mejor visualización
+        ax.set_xlabel('n')
+        ax.set_ylabel('Amplitud')
+        ax.set_title(title)
+        ax.grid()
+```
+definiendo las señales de la siguiente manera:
+```
+# Definir las señales discretas y realizar la convolución para cada caso
+signals = [
+    (np.array([5, 6, 0, 0, 6, 7, 4]), np.array([1, 0, 7, 6, 7, 3, 6, 7, 3, 2]), 'Convolución de Paula'),
+    (np.array([5, 6, 0, 0, 6, 9, 8]), np.array([1, 0, 0, 6, 7, 9, 6, 6, 1, 8]), 'Convolución de Sara'),
+    (np.array([5, 6, 0, 0, 7, 1, 6]), np.array([1, 0, 7, 4, 5, 5, 8, 9, 9, 0]), 'Convolución de Cristian')
+]
+
+plot_convolutions(signals)
+```
 
 ### Parte B (Correlación entre dos señales)   
 
