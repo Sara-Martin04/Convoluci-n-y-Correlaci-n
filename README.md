@@ -117,7 +117,6 @@ plt.ylabel("Amplitud")
 plt.legend(["x1[n] = cos(2π100nTs)", "x2[n] = sin(2π100nTs)"])
 plt.grid()
 ```
-Obtuvimos lo siguiente:
 ![Imagen de WhatsApp 2025-02-12 a las 22 23 34_2c930b06](https://github.com/user-attachments/assets/e4c2bac4-458f-4c9c-b621-0df286745797)
 *señal original*
 
@@ -133,7 +132,6 @@ plt.xlabel("k")
 plt.ylabel("Amplitud")
 plt.grid()
 ```
-Obtuvimos lo siguiente:
 ![Imagen de WhatsApp 2025-02-12 a las 22 23 17_ae519929](https://github.com/user-attachments/assets/ac77767d-5d52-4fab-8168-5940052b0354)
 
 *señal correlacion cruzada*
@@ -173,7 +171,6 @@ coef_var_manual = desv_manual / media_manual
 
 ![Imagen de WhatsApp 2025-02-12 a las 22 37 04_0b9bbe87](https://github.com/user-attachments/assets/9bfc3888-5c35-4b19-bdd1-803eea6c476d)
 
-- Obtuvimos el histograma:
 ````
 # Histograma 
 bins_count = 60 
