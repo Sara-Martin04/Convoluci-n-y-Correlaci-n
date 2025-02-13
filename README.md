@@ -89,7 +89,7 @@ plot_convolutions(signals)
   
   ![Imagen de WhatsApp 2025-02-12 a las 21 48 26_45671dda](https://github.com/user-attachments/assets/d75cb76c-1684-4bbf-93ed-16adb339bbac)
 
-Para realizar esta parte de la practica implementamos el siguiente codigo:
+Para realizar esta parte de la práctica implementamos el siguiente código:
 
 1. se define la señal y se calcula la correlación
 ```
