@@ -31,21 +31,21 @@ Con estos tres sistemas y estas tres señales, se encontró la señal resultante
 
 ![IMG_0120 jpeg](https://github.com/user-attachments/assets/e79f8ed0-0c14-47d0-9838-83771375d3f4)
 
-*calculos manuales*
+*cálculos manuales*
 
 ![IMG_0119 jpeg](https://github.com/user-attachments/assets/4fcbf68f-5c8c-4130-ae0a-d3b7fe4464c4)
 
-*calculos python*
+*cálculos python*
 
 También se obtuvieron gráficas  con los dos tipos de cálculos manuales y de las funciones de python.
 
  ![IMG_0124 jpeg](https://github.com/user-attachments/assets/fc475528-91b2-4d60-a058-e42c1610a2d3)
  
-*graficas manuales*
+*gráficas manuales*
 
 ![convoluciones](https://github.com/user-attachments/assets/e9d91491-b652-4721-bccd-146e764eb813)
 
-*graficas python*
+*gráficas python*
 
 Para realizar los cálculos y gráficas en python realizamos el siguiente código:
 ```
