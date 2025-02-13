@@ -117,6 +117,10 @@ plt.ylabel("Amplitud")
 plt.legend(["x1[n] = cos(2π100nTs)", "x2[n] = sin(2π100nTs)"])
 plt.grid()
 ```
+Obtuvimos lo siguiente:
+![Imagen de WhatsApp 2025-02-12 a las 22 23 34_2c930b06](https://github.com/user-attachments/assets/e4c2bac4-458f-4c9c-b621-0df286745797)
+*senal original*
+
 
 4. Se grafica la correlacion cruzada
 ```
@@ -130,9 +134,9 @@ plt.ylabel("Amplitud")
 plt.grid()
 ```
 Obtuvimos lo siguiente:
+![Imagen de WhatsApp 2025-02-12 a las 22 23 17_ae519929](https://github.com/user-attachments/assets/ac77767d-5d52-4fab-8168-5940052b0354)
 
-![correlacion](https://github.com/user-attachments/assets/991743dc-10ce-473f-823b-e9feb7686747)
-*señal original y señal correlacion cruzada*
+*señal correlacion cruzada*
 
 ### Parte C (Señal EEG) 
 Para esta última parte de la práctica se utilizó datos de la extensión .edf del estudio Señales EEG de una presentación visual serial rápida (RSVP) a diferentes velocidades de 5, 6 y 10 Hz, los datos que elegimos fueron los del paciente 13 a los 10 Hz, para poder importar la señal descargamos la libreria pyedflib
