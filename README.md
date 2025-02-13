@@ -37,7 +37,7 @@ Con estos tres sistemas y estas tres señales, se encontró la señal resultante
 
 *cálculos python*
 
-También se obtuvieron gráficas  con los dos tipos de cálculos manuales y de las funciones de python.
+También se obtuvieron gráficas  con los dos tipos de cálculos, manuales y de las funciones de python.
 
  ![IMG_0124 jpeg](https://github.com/user-attachments/assets/fc475528-91b2-4d60-a058-e42c1610a2d3)
  
