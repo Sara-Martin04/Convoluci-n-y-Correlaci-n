@@ -119,7 +119,7 @@ plt.grid()
 ```
 Obtuvimos lo siguiente:
 ![Imagen de WhatsApp 2025-02-12 a las 22 23 34_2c930b06](https://github.com/user-attachments/assets/e4c2bac4-458f-4c9c-b621-0df286745797)
-*senal original*
+*señal original*
 
 
 4. Se grafica la correlación cruzada
