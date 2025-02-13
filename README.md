@@ -3,7 +3,7 @@
 Este proyecto contiene el código para mostrar diferentes tipos de señales, entre ellas una señal EEG obtenida del sitio web Physionet, del estudio EEG signals from an RSVP Task (Señales EEG de una presentación visual serial rápida); también tres gráficos resultantes de la convolución de los dígitos de las cédulas y los dígitos de los códigos estudiantiles; y para la última gráfica se realizó la correlación entre dos señales.  
 
 Este proyecto se dividió en tres partes: 
-## Parte a (Señal resultante de la convolución) 
+### Parte a (Señal resultante de la convolución) 
 
 Teniendo en cuenta tres diferentes sistemas los cuales son: 
 
@@ -27,10 +27,10 @@ Con estos tres sistemas y estas tres señales, se encontró la señal resultante
 También se obtuvieron gráficas  con los dos tipos de cálculos manuales y de las funciones de python. 
 (SEÑALES A MANO Y DE PYTHON) 
 
-## Parte B (Correlación entre dos señales)   
+### Parte B (Correlación entre dos señales)   
 
 
 
-## Parte C (Señal EEG) 
+### Parte C (Señal EEG) 
 
 
