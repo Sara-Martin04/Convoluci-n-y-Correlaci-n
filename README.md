@@ -154,7 +154,6 @@ clasificación = "Señal fisiológica" if "EEG" in nombre_canal else "Otra seña
 y_f = fft(senal)
 freqs = fftfreq(len(senal), 1/fs)
 ```
-Obtuvimos los siguiente:
 
 ![Imagen de WhatsApp 2025-02-12 a las 22 35 44_ada013e7](https://github.com/user-attachments/assets/beaa840e-88ee-4b0a-9ea2-fdde59ae0e6d)
 *transformada de fourier de la señal*
@@ -171,7 +170,6 @@ media_manual = np.mean(senal)
 desv_manual = np.std(senal)
 coef_var_manual = desv_manual / media_manual
 ````
-Obtuvimos los siguiente:
 
 ![Imagen de WhatsApp 2025-02-12 a las 22 37 04_0b9bbe87](https://github.com/user-attachments/assets/9bfc3888-5c35-4b19-bdd1-803eea6c476d)
 
@@ -182,13 +180,12 @@ bins_count = 60
 hist_f, bins_f = np.histogram(np.abs(freqs), bins=bins_count, density=True)
 bin_centers_f = (bins_f[:-1] + bins_f[1:]) / 2
 ````
-Obtuvimos lo siguiente:
 
 ![Imagen de WhatsApp 2025-02-12 a las 22 36 06_99178709](https://github.com/user-attachments/assets/62f8c69c-fdb6-4371-90d3-b14b095df076)
 *histograma*
 
 ## Recomendaciones
--Python 3.9, wfdb, matplotlib
+-Python 3.9, pyedflib, matplotlib
 
 ## Información de contacto
 -est.paula.vcardenas@unimilitar.edu.co, est.sara.martin@unimilitar.edu.co, est.cristian.cmolina@unimilitar.edu.co
