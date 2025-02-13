@@ -148,7 +148,7 @@ Para esta última parte de la práctica se utilizó datos de la extensión .edf 
 ```
 clasificación = "Señal fisiológica" if "EEG" in nombre_canal else "Otra señal biomédica"
 ```
-- Calculamos la transformada de fourier implementando el siguiente codigo:
+- Calculamos la transformada de fourier implementando el siguiente código:
 ```
 # Transformada de Fourier
 y_f = fft(senal)
@@ -159,7 +159,7 @@ Obtuvimos los siguiente:
 ![Imagen de WhatsApp 2025-02-12 a las 22 35 44_ada013e7](https://github.com/user-attachments/assets/beaa840e-88ee-4b0a-9ea2-fdde59ae0e6d)
 *transformada de fourier de la señal*
 
-- Calculamos los estadisticos:
+- Calculamos los estadísticos:
 ```
 # Estadísticos en función de la frecuencia
 frecuencia_media = np.mean(np.abs(freqs))
@@ -171,7 +171,7 @@ media_manual = np.mean(senal)
 desv_manual = np.std(senal)
 coef_var_manual = desv_manual / media_manual
 ````
-Obtubimos los siguiente:
+Obtuvimos los siguiente:
 
 ![Imagen de WhatsApp 2025-02-12 a las 22 37 04_0b9bbe87](https://github.com/user-attachments/assets/9bfc3888-5c35-4b19-bdd1-803eea6c476d)
 
@@ -190,7 +190,7 @@ Obtuvimos lo siguiente:
 ## Recomendaciones
 -Python 3.9, wfdb, matplotlib
 
-## Informacion de contacto
+## Información de contacto
 -est.paula.vcardenas@unimilitar.edu.co, est.sara.martin@unimilitar.edu.co, est.cristian.cmolina@unimilitar.edu.co
 
 ### Referencias
